@@ -1,0 +1,17 @@
+{
+  "name": "hub-de-leitura-api-teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "keywords": [],
+  "author": "Thiago C. H. Moreira",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cypress": "^15.9.0",
+    "cypress-plugin-api": "^2.11.2"
+  }
+}
