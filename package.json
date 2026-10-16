@@ -1,12 +1,18 @@
 {
   "name": "hub-de-leitura-api-teste",
   "version": "1.0.0",
-  "description": "",
+  "description": "Teste de API para o Hub de Leitura da EBAC - Módulo 14",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run"
   },
-  "keywords": [],
+  "keywords": [
+    "testing",
+    "api",
+    "cypress",
+    "ebac",
+    "modulo_14"
+  ],
   "author": "Thiago C. H. Moreira",
   "license": "ISC",
   "type": "commonjs",
