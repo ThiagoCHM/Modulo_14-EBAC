@@ -1,0 +1,70 @@
+
+[
+  {
+    "tipo": "ausente",
+    "campo": "title",
+    "descricao": "Título ausente"
+  },
+  {
+    "tipo": "ausente",
+    "campo": "author",
+    "descricao": "Autor ausente"
+  },
+  {
+    "tipo": "ausente",
+    "campo": "category",
+    "descricao": "Categoria ausente"
+  },
+  {
+    "tipo": "ausente",
+    "campo": "isbn",
+    "descricao": "ISBN ausente"
+  },
+  {
+    "tipo": "ausente",
+    "campo": "total_copies",
+    "descricao": "Total de exemplares ausente"
+  },
+  {
+    "tipo": "invalido",
+    "campo": "title",
+    "descricao": "Título vazio",
+    "valor": ""
+  },
+  {
+    "tipo": "invalido",
+    "campo": "category",
+    "descricao": "Categoria inválida",
+    "valor": "Categoria Inexistente"
+  },
+  {
+    "tipo": "invalido",
+    "campo": "isbn",
+    "descricao": "ISBN em formato inválido",
+    "valor": "ISBN-INVALIDO"
+  },
+  {
+    "tipo": "invalido",
+    "campo": "publication_year",
+    "descricao": "Ano de publicação inválido",
+    "valor": -1
+  },
+  {
+    "tipo": "invalido",
+    "campo": "pages",
+    "descricao": "Número de páginas negativo",
+    "valor": -1
+  },
+  {
+    "tipo": "invalido",
+    "campo": "total_copies",
+    "descricao": "Total de exemplares negativo",
+    "valor": -1
+  },
+  {
+    "tipo": "invalido",
+    "campo": "available_copies",
+    "descricao": "Disponibilidade superior ao total",
+    "valor": 999
+  }
+]
