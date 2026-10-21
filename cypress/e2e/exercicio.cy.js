@@ -224,9 +224,10 @@ describe('Testes da Funcionalidade Catálogo de Livros', () => {
                url: 'books',
                headers: { Authorization: token },
                body: gerarLivroValido()
-          }).then((response) => {
-               expect(response.status).to.equal(201)
-               const livroId = response.body.book.id;
+          }).then((postResponse) => {
+               expect(postResponse.status).to.equal(201)
+               const livroId = postResponse.body.book.id;
+               const tituloAnterior = postResponse.body.book.title;
 
                cy.api({
                     method: 'PUT',
@@ -234,11 +235,10 @@ describe('Testes da Funcionalidade Catálogo de Livros', () => {
                     headers: { Authorization: token },
                     body: livroAtualizado
                }).then((putResponse) => {
-                    const tituloAnterior = putResponse.body.title;
                     expect(putResponse.status).to.equal(200);
                     expect(putResponse.body.message).to.equal('Livro atualizado com sucesso.');
                     expect(putResponse.body.bookId).to.equal(livroId);
-                    expect(putResponse.body.previousTitle.title).to.equal(tituloAnterior);
+                    expect(putResponse.body.previousTitle).to.equal(tituloAnterior);
 
                     cy.api({
                          method: 'GET',
